@@ -45,9 +45,6 @@ function shuffle(array) {
 
 let shuffledColors = shuffle(COLORS);
 
-// this function loops over the array of colors
-// it creates a new div and gives it a class with the value of the color
-// it also adds an event listener for a click for each card
 function createDivsForColors(colorArray) {
   for (let color of colorArray) {
     const newDiv = document.createElement("div");
@@ -72,7 +69,6 @@ function handleCardClick(e) {
 
   if (cardA && cardB) {
     noClicking = true;
-    // debugger
     let gifA = cardA.className;
     let gifB = cardB.className;
 
